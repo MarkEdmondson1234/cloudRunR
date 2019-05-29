@@ -24,7 +24,7 @@ Note the `pr$run` must have a numeric value passed to it for the port.
 
 ### Concurrency
 
-R by default is single-threaded (like Python), so only 1 hit per container will be immediatly served, other hits will queue until the previous hit has completed.  For multi-threading, use `library(future)` to serve up to 80 threads (Python uses gunicorn).  A demo of that is [here](https://github.com/FvD/futureplumber/blob/master/multiprocess/future.R)
+R by default is single-threaded, so only 1 hit per container will be immediatly served, other hits will queue until the previous hit has completed.  For multi-threading, use `library(future)` to serve up to 80 threads (Python uses gunicorn).  A demo of that is [here](https://github.com/FvD/futureplumber/blob/master/multiprocess/future.R)
 
 The effect of concurrency on scalability of the Cloud Run app is [here](https://cloud.google.com/run/docs/about-concurrency)
 
