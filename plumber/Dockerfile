@@ -17,4 +17,4 @@ WORKDIR /payload/
 COPY [".", "./"]
 
 ENTRYPOINT ["R", "-e", "pr <- plumber::plumb(commandArgs()[4]); pr$run(host='0.0.0.0', port=Sys.getenv('PORT')"]
-CMD ["schedule.R"]
+CMD ["api.R"]
