@@ -1,7 +1,7 @@
 # cloudRunR
 Running R on Cloud Run.  Cloud Run lets you run any code within a Docker container, and will scale to billions of hits and down to 0, so you only pay for what you need. 
 
-A demo app that copies the "Hello World" examples from plumber (  https://www.rplumber.io/ ) is available at these Cloud Run URLs:
+A demo app is available in the `plumber` folder of this repo.  It copies the "Hello World" examples from plumber (  https://www.rplumber.io/ ) and the end result is available at these Cloud Run URLs:
 
 * https://cloudrunr-ewjogewawq-uc.a.run.app/hello
 * https://cloudrunr-ewjogewawq-uc.a.run.app/echo?msg=my%20message
