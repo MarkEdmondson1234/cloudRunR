@@ -39,9 +39,10 @@ Set up [Google Cloud Build Trigger](https://console.cloud.google.com/cloud-build
 
 Once the Cloud Build has finished it will give you a Docker URI such as `gcr.io/mark-edmondson-gde/cloudrunr:939c04dfe80a1eefed28f9dd59aae5dff5dc1e1e`.  
 
-Put that in the Cloud Run field. 
-
-Select public endpoint, and limit concurrency to what your app is configured to handle per instance (I chose 8)
+1. Go to https://console.cloud.google.com/run/
+2. Create a new service, name it something cool
+3. Put the Docker URI into the Cloud Run field. 
+4. Select public endpoint, and limit concurrency to what your app is configured to handle per instance (I chose 8)
 
 And thats it.  A deployed R API. 
 
