@@ -1,7 +1,13 @@
 # cloudRunR
 Running R on Cloud Run (https://cloud.run).  Cloud Run lets you run any code within a Docker container, and will scale to billions of hits and down to 0, so you only pay for what you need. 
 
-A demo app is available in the `plumber` folder of this repo.  It copies the "Hello World" examples from plumber ( https://www.rplumber.io/) and the end result is available at these Cloud Run URLs:
+A demo app is available in the `plumber` folder of this repo.  It copies the "Hello World" examples from plumber ( https://www.rplumber.io/). 
+
+You can deploy it on your own GCP project via this button:
+[![Run on Google Cloud](https://storage.googleapis.com/cloudrun/button.svg)](https://console.cloud.google.com/cloudshell/editor?shellonly=true&cloudshell_image=gcr.io/cloudrun/button&cloudshell_git_repo=https://github.com/MarkEdmondson1234/cloudRunR.git&cloudshell_working_dir=plumber)
+
+
+The end result is available at these Cloud Run URLs:
 
 * https://cloudrunr-ewjogewawq-uc.a.run.app/hello
 * https://cloudrunr-ewjogewawq-uc.a.run.app/echo?msg=my%20message
