@@ -4,15 +4,18 @@ Running R on Cloud Run (https://cloud.run).  Cloud Run lets you run any code wit
 A demo app is available in the `plumber` folder of this repo.  It copies the "Hello World" examples from plumber ( https://www.rplumber.io/). 
 
 You can deploy it on your own GCP project via this button:
+
 [![Run on Google Cloud](https://storage.googleapis.com/cloudrun/button.svg)](https://console.cloud.google.com/cloudshell/editor?shellonly=true&cloudshell_image=gcr.io/cloudrun/button&cloudshell_git_repo=https://github.com/MarkEdmondson1234/cloudRunR.git&cloudshell_working_dir=plumber)
 
 
-The end result is available at these Cloud Run URLs:
+The end result should be similar to these Cloud Run URLs:
 
 * https://cloudrunr-ewjogewawq-uc.a.run.app/hello
 * https://cloudrunr-ewjogewawq-uc.a.run.app/echo?msg=my%20message
 * https://cloudrunr-ewjogewawq-uc.a.run.app/plot
 * https://cloudrunr-ewjogewawq-uc.a.run.app/plot?spec=setosa
+
+Adapt the R script in `plumber/api.R` for your own uses.
 
 ## Quickstart: Build and Deploy for R
 
